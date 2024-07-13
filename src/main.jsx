@@ -2,34 +2,33 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-// import { Provider } from "react-redux";
-// import store from "./store.js";
-// import Cart from "./CartItem.jsx";
-// import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: (
-//       <Provider store={store}>
-//         <App />
-//       </Provider>
-//     ),
-//   },
-//   {
-//     path: "/cart",
-//     element: (
-//       <Provider store={store}>
-//         <Cart />
-//       </Provider>
-//     ),
-//   },
-// ]);
+import { Provider } from "react-redux";
+import store from "./store.js";
+import Cart from "./CartItem.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+const router = createBrowserRouter([
+  {
+    path: "/ibm-plant-shop",
+    element: (
+      <Provider store={store}>
+        <App />
+      </Provider>
+    ),
+  },
+  {
+    path: "/ibm-plant-shop/cart",
+    element: (
+      <Provider store={store}>
+        <Cart />
+      </Provider>
+    ),
+  },
+]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <RouterProvider router={router} /> */}
+    <RouterProvider router={router} />
     {/* <Provider store={store}>*/}
     {/* <App /> */}
-    <h1>hello there</h1>
-    {/*</Provider> */}
+    {/* </Provider> */}
   </React.StrictMode>
 );

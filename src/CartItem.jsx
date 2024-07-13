@@ -19,7 +19,7 @@ const Cart = ({ onContinueShopping }) => {
   };
 
   const handleContinueShopping = (e) => {
-    navigate("/shoppingreact");
+    navigate("/ibm-plant-shop");
   };
   const handleCheckoutShopping = (e) => {
     alert("Functionality to be added for future reference");
