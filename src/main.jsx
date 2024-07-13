@@ -8,7 +8,7 @@ import Cart from "./CartItem.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
-    path: "https://almahdiahmed.github.io/ibm-plant-shop/",
+    path: "/",
     element: (
       <Provider store={store}>
         <App />
